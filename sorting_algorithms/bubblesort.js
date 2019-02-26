@@ -1,15 +1,12 @@
-function bubblesort(arr) {
-    for (var i = arr.length - 1; i >= 0; i--) {
-        for (var j = 1; j <= i; j++) {
-            if(arr[j-1] > arr[j]){
-                var temp = arr[j-1];
-                arr[j-1] = arr[j];
-                arr[j] = temp;
+var bubbleSort = (arr) => {
+    const { length } = arr;
+    for (i = 0; i < length; i++) {
+        for (j = 0; j < length - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; //swap
             }
-            console.log(arr);
         }
     }
+    return arr;
 }
-var arr = [2,3,5,7,1,6,9];
-bubblesort(arr);
-console.log(arr);
+bubbleSort([5,4,3,2,1,6,9,1,5,7]);
