@@ -67,7 +67,7 @@ class Tree {
                 return node;
             }
             else if (node.right === null) { //case 2 node with one child
-                node = node.right;
+                node = node.left;
                 return node;
             }
             //case 3 if node has both children

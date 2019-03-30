@@ -14,5 +14,4 @@ var selectionSort = (arr) => {
     return arr;
 }
 
-selectionSort([5,4,5,2,5,7,1]);
-
+selectionSort([5, 4, 5, 2, 5, 7, 1]);

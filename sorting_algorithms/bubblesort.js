@@ -9,4 +9,5 @@ var bubbleSort = (arr) => {
     }
     return arr;
 }
-bubbleSort([5,4,3,2,1,6,9,1,5,7]);
+bubbleSort([5, 4, 3, 2, 1, 6, 9, 1, 5, 7]);
+
